@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-500: #aa3bff;
+  --color-brand-900: #1a0b2e;
+  --color-dark-bg: #16171d;
+  --color-dark-panel: #1f2028;
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-900 text-neutral-100 font-sans;
+    margin: 0;
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "teamA": {
+    "name": "Team A",
+    "currency": 1000,
+    "points": 0,
+    "status": "Active",
+    "assignedSets": [],
+    "problemScores": {}
+  },
+  "teamB": {
+    "name": "Team B",
+    "currency": 980,
+    "points": 5,
+    "status": "Active",
+    "assignedSets": [
+      "1"
+    ],
+    "problemScores": {
+      "S1Q1": 5
+    }
+  },
+  "teamC": {
+    "name": "Team C",
+    "currency": 1000,
+    "points": 0,
+    "status": "Active",
+    "assignedSets": [],
+    "problemScores": {}
+  },
+  "teamD": {
+    "name": "Team D",
+    "currency": 1000,
+    "points": 0,
+    "status": "Active",
+    "assignedSets": [],
+    "problemScores": {}
+  },
+  "teamE": {
+    "name": "Team E",
+    "currency": 1000,
+    "points": 0,
+    "status": "Active",
+    "assignedSets": [],
+    "problemScores": {}
+  },
+  "teamF": {
+    "name": "Team F",
+    "currency": 1000,
+    "points": 0,
+    "status": "Active",
+    "assignedSets": [],
+    "problemScores": {}
+  },
+  "teamG": {
+    "name": "Team G",
+    "currency": 1000,
+    "points": 0,
+    "status": "Active",
+    "assignedSets": [],
+    "problemScores": {}
+  },
+  "teamH": {
+    "name": "Team H",
+    "currency": 1000,
+    "points": 0,
+    "status": "Active",
+    "assignedSets": [],
+    "problemScores": {}
+  }
+}

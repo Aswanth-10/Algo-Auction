@@ -1,0 +1,1479 @@
+{
+  "algo_auction_sets": [
+    {
+      "set_number": 6,
+      "questions": [
+        {
+          "question_id": "S6Q1",
+          "type": "palindrome_number",
+          "visible_tests": [
+            {
+              "input": "121",
+              "output": "Palindrome"
+            },
+            {
+              "input": "123",
+              "output": "Not Palindrome"
+            },
+            {
+              "input": "12321",
+              "output": "Palindrome"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1",
+              "output": "Palindrome"
+            },
+            {
+              "input": "10",
+              "output": "Not Palindrome"
+            },
+            {
+              "input": "9",
+              "output": "Palindrome"
+            },
+            {
+              "input": "1001",
+              "output": "Palindrome"
+            },
+            {
+              "input": "12345",
+              "output": "Not Palindrome"
+            },
+            {
+              "input": "99",
+              "output": "Palindrome"
+            },
+            {
+              "input": "100",
+              "output": "Not Palindrome"
+            }
+          ]
+        },
+        {
+          "question_id": "S6Q2",
+          "type": "string_length_without_builtin",
+          "visible_tests": [
+            {
+              "input": "hello",
+              "output": "5"
+            },
+            {
+              "input": "programming",
+              "output": "11"
+            },
+            {
+              "input": "a",
+              "output": "1"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "",
+              "output": "0"
+            },
+            {
+              "input": "abcdefghij",
+              "output": "10"
+            },
+            {
+              "input": "algo auction",
+              "output": "12"
+            },
+            {
+              "input": "z",
+              "output": "1"
+            },
+            {
+              "input": "twelve chars",
+              "output": "12"
+            },
+            {
+              "input": "12345",
+              "output": "5"
+            },
+            {
+              "input": "Hello World!",
+              "output": "12"
+            }
+          ]
+        },
+        {
+          "question_id": "S6Q3",
+          "type": "average_of_array",
+          "visible_tests": [
+            {
+              "input": "1 2 3 4 5",
+              "output": "3.0"
+            },
+            {
+              "input": "10 20 30",
+              "output": "20.0"
+            },
+            {
+              "input": "5",
+              "output": "5.0"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "0 0 0",
+              "output": "0.0"
+            },
+            {
+              "input": "2 4 6 8",
+              "output": "5.0"
+            },
+            {
+              "input": "1 3 5 7 9",
+              "output": "5.0"
+            },
+            {
+              "input": "100 200",
+              "output": "150.0"
+            },
+            {
+              "input": "7 7 7 7",
+              "output": "7.0"
+            },
+            {
+              "input": "10 20 30 40 50",
+              "output": "30.0"
+            },
+            {
+              "input": "1 2",
+              "output": "1.5"
+            }
+          ]
+        },
+        {
+          "question_id": "S6Q4",
+          "type": "count_primes_in_range",
+          "visible_tests": [
+            {
+              "input": "1 10",
+              "output": "4"
+            },
+            {
+              "input": "1 20",
+              "output": "8"
+            },
+            {
+              "input": "1 100",
+              "output": "25"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1 1",
+              "output": "0"
+            },
+            {
+              "input": "2 2",
+              "output": "1"
+            },
+            {
+              "input": "1 50",
+              "output": "15"
+            },
+            {
+              "input": "10 30",
+              "output": "6"
+            },
+            {
+              "input": "50 100",
+              "output": "10"
+            },
+            {
+              "input": "1 2",
+              "output": "1"
+            },
+            {
+              "input": "90 100",
+              "output": "1"
+            }
+          ]
+        },
+        {
+          "question_id": "S6Q5",
+          "type": "first_non_repeating_character",
+          "visible_tests": [
+            {
+              "input": "swiss",
+              "output": "w"
+            },
+            {
+              "input": "aabbcc",
+              "output": "No unique character"
+            },
+            {
+              "input": "programming",
+              "output": "p"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "a",
+              "output": "a"
+            },
+            {
+              "input": "aab",
+              "output": "b"
+            },
+            {
+              "input": "abcd",
+              "output": "a"
+            },
+            {
+              "input": "aabbccdd",
+              "output": "No unique character"
+            },
+            {
+              "input": "leetcode",
+              "output": "l"
+            },
+            {
+              "input": "abacabad",
+              "output": "c"
+            },
+            {
+              "input": "xxyyzz",
+              "output": "No unique character"
+            }
+          ]
+        },
+        {
+          "question_id": "S6Q6",
+          "type": "even_fibonacci_sum",
+          "description": "Find the sum of all even Fibonacci numbers up to (and including) n.",
+          "formula": "Generate Fibonacci sequence. Sum only even-valued terms where term <= n.",
+          "visible_tests": [
+            {
+              "input": "10",
+              "output": "10"
+            },
+            {
+              "input": "100",
+              "output": "44"
+            },
+            {
+              "input": "50",
+              "output": "44"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "2",
+              "output": "2"
+            },
+            {
+              "input": "1",
+              "output": "0"
+            },
+            {
+              "input": "8",
+              "output": "10"
+            },
+            {
+              "input": "34",
+              "output": "44"
+            },
+            {
+              "input": "1000",
+              "output": "798"
+            },
+            {
+              "input": "144",
+              "output": "188"
+            },
+            {
+              "input": "400",
+              "output": "188"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "set_number": 7,
+      "questions": [
+        {
+          "question_id": "S7Q1",
+          "type": "largest_digit",
+          "visible_tests": [
+            {
+              "input": "3947",
+              "output": "9"
+            },
+            {
+              "input": "12345",
+              "output": "5"
+            },
+            {
+              "input": "7",
+              "output": "7"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "0",
+              "output": "0"
+            },
+            {
+              "input": "999",
+              "output": "9"
+            },
+            {
+              "input": "100",
+              "output": "1"
+            },
+            {
+              "input": "1234567890",
+              "output": "9"
+            },
+            {
+              "input": "55",
+              "output": "5"
+            },
+            {
+              "input": "19",
+              "output": "9"
+            },
+            {
+              "input": "321",
+              "output": "3"
+            }
+          ]
+        },
+        {
+          "question_id": "S7Q2",
+          "type": "remove_spaces",
+          "visible_tests": [
+            {
+              "input": "hello world",
+              "output": "helloworld"
+            },
+            {
+              "input": "  algo  auction  ",
+              "output": "algoauction"
+            },
+            {
+              "input": "no spaces",
+              "output": "nospaces"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": " ",
+              "output": ""
+            },
+            {
+              "input": "a b c",
+              "output": "abc"
+            },
+            {
+              "input": "programming is fun",
+              "output": "programmingisfun"
+            },
+            {
+              "input": "hello",
+              "output": "hello"
+            },
+            {
+              "input": "  ",
+              "output": ""
+            },
+            {
+              "input": "one two three",
+              "output": "onetwothree"
+            },
+            {
+              "input": " x y z ",
+              "output": "xyz"
+            }
+          ]
+        },
+        {
+          "question_id": "S7Q3",
+          "type": "count_even_numbers",
+          "visible_tests": [
+            {
+              "input": "1 2 3 4 5 6",
+              "output": "3"
+            },
+            {
+              "input": "1 3 5 7",
+              "output": "0"
+            },
+            {
+              "input": "2 4 6 8",
+              "output": "4"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "0",
+              "output": "1"
+            },
+            {
+              "input": "1",
+              "output": "0"
+            },
+            {
+              "input": "10 20 30",
+              "output": "3"
+            },
+            {
+              "input": "1 2 3 4 5",
+              "output": "2"
+            },
+            {
+              "input": "100 200 300 400 500",
+              "output": "5"
+            },
+            {
+              "input": "7 8 9 10",
+              "output": "2"
+            },
+            {
+              "input": "0 0 0",
+              "output": "3"
+            }
+          ]
+        },
+        {
+          "question_id": "S7Q4",
+          "type": "perfect_number",
+          "description": "A Perfect Number equals the sum of all its proper divisors (excluding itself).",
+          "formula": "Sum all d where 1 <= d < n and n % d == 0. If sum == n, it is Perfect.",
+          "visible_tests": [
+            {
+              "input": "6",
+              "output": "Perfect"
+            },
+            {
+              "input": "28",
+              "output": "Perfect"
+            },
+            {
+              "input": "10",
+              "output": "Not Perfect"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1",
+              "output": "Not Perfect"
+            },
+            {
+              "input": "12",
+              "output": "Not Perfect"
+            },
+            {
+              "input": "496",
+              "output": "Perfect"
+            },
+            {
+              "input": "8128",
+              "output": "Perfect"
+            },
+            {
+              "input": "100",
+              "output": "Not Perfect"
+            },
+            {
+              "input": "4",
+              "output": "Not Perfect"
+            },
+            {
+              "input": "36",
+              "output": "Not Perfect"
+            }
+          ]
+        },
+        {
+          "question_id": "S7Q5",
+          "type": "check_sorted_array",
+          "visible_tests": [
+            {
+              "input": "1 2 3 4 5",
+              "output": "Sorted"
+            },
+            {
+              "input": "5 3 1",
+              "output": "Not Sorted"
+            },
+            {
+              "input": "1 1 2 3",
+              "output": "Sorted"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1",
+              "output": "Sorted"
+            },
+            {
+              "input": "2 1",
+              "output": "Not Sorted"
+            },
+            {
+              "input": "1 2 3 3 4",
+              "output": "Sorted"
+            },
+            {
+              "input": "10 20 15",
+              "output": "Not Sorted"
+            },
+            {
+              "input": "5 5 5 5",
+              "output": "Sorted"
+            },
+            {
+              "input": "1 2 3 2 1",
+              "output": "Not Sorted"
+            },
+            {
+              "input": "0 1 2 3",
+              "output": "Sorted"
+            }
+          ]
+        },
+        {
+          "question_id": "S7Q6",
+          "type": "palindrome_words_in_sentence",
+          "visible_tests": [
+            {
+              "input": "madam racecar hello level",
+              "output": "madam racecar level"
+            },
+            {
+              "input": "hello world",
+              "output": ""
+            },
+            {
+              "input": "civic noon eye",
+              "output": "civic noon eye"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "a",
+              "output": "a"
+            },
+            {
+              "input": "abc",
+              "output": ""
+            },
+            {
+              "input": "radar deed tenet coding",
+              "output": "radar deed tenet"
+            },
+            {
+              "input": "mom dad sister brother",
+              "output": "mom dad"
+            },
+            {
+              "input": "refer noon kayak test",
+              "output": "refer noon kayak"
+            },
+            {
+              "input": "apple banana",
+              "output": ""
+            },
+            {
+              "input": "anna bob carol",
+              "output": "anna bob"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "set_number": 8,
+      "questions": [
+        {
+          "question_id": "S8Q1",
+          "type": "perfect_square",
+          "visible_tests": [
+            {
+              "input": "9",
+              "output": "Perfect Square"
+            },
+            {
+              "input": "16",
+              "output": "Perfect Square"
+            },
+            {
+              "input": "10",
+              "output": "Not Perfect Square"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1",
+              "output": "Perfect Square"
+            },
+            {
+              "input": "4",
+              "output": "Perfect Square"
+            },
+            {
+              "input": "25",
+              "output": "Perfect Square"
+            },
+            {
+              "input": "0",
+              "output": "Perfect Square"
+            },
+            {
+              "input": "36",
+              "output": "Perfect Square"
+            },
+            {
+              "input": "15",
+              "output": "Not Perfect Square"
+            },
+            {
+              "input": "100",
+              "output": "Perfect Square"
+            }
+          ]
+        },
+        {
+          "question_id": "S8Q2",
+          "type": "concatenate_strings",
+          "visible_tests": [
+            {
+              "input": "hello world",
+              "output": "helloworld"
+            },
+            {
+              "input": "algo auction",
+              "output": "algoauction"
+            },
+            {
+              "input": "foo bar",
+              "output": "foobar"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "a b",
+              "output": "ab"
+            },
+            {
+              "input": "abc def",
+              "output": "abcdef"
+            },
+            {
+              "input": "hello  ",
+              "output": "hello"
+            },
+            {
+              "input": "  world",
+              "output": "world"
+            },
+            {
+              "input": "open source",
+              "output": "opensource"
+            },
+            {
+              "input": "12 34",
+              "output": "1234"
+            },
+            {
+              "input": "x y",
+              "output": "xy"
+            }
+          ]
+        },
+        {
+          "question_id": "S8Q3",
+          "type": "count_odd_numbers",
+          "visible_tests": [
+            {
+              "input": "1 2 3 4 5",
+              "output": "3"
+            },
+            {
+              "input": "2 4 6 8",
+              "output": "0"
+            },
+            {
+              "input": "1 3 5 7",
+              "output": "4"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "0",
+              "output": "0"
+            },
+            {
+              "input": "1",
+              "output": "1"
+            },
+            {
+              "input": "10 20 30",
+              "output": "0"
+            },
+            {
+              "input": "7 8 9 10",
+              "output": "2"
+            },
+            {
+              "input": "1 1 1",
+              "output": "3"
+            },
+            {
+              "input": "2 3 4 5 6",
+              "output": "2"
+            },
+            {
+              "input": "100 101 102 103",
+              "output": "2"
+            }
+          ]
+        },
+        {
+          "question_id": "S8Q4",
+          "type": "armstrong_in_range",
+          "description": "Find all Armstrong numbers in the given range [l, r].",
+          "formula": "For each n in [l,r]: let d = number of digits. If sum(digit^d for each digit) == n, it is Armstrong.",
+          "visible_tests": [
+            {
+              "input": "1 500",
+              "output": "1 2 3 4 5 6 7 8 9 153 370 371 407"
+            },
+            {
+              "input": "100 200",
+              "output": "153"
+            },
+            {
+              "input": "400 500",
+              "output": "407"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1 10",
+              "output": "1 2 3 4 5 6 7 8 9"
+            },
+            {
+              "input": "150 160",
+              "output": "153"
+            },
+            {
+              "input": "365 375",
+              "output": "370 371"
+            },
+            {
+              "input": "200 300",
+              "output": ""
+            },
+            {
+              "input": "1 1",
+              "output": "1"
+            },
+            {
+              "input": "9000 9500",
+              "output": "9474"
+            },
+            {
+              "input": "1000 1000",
+              "output": ""
+            }
+          ]
+        },
+        {
+          "question_id": "S8Q5",
+          "type": "character_frequency",
+          "visible_tests": [
+            {
+              "input": "hello",
+              "output": "h:1 e:1 l:2 o:1"
+            },
+            {
+              "input": "aabb",
+              "output": "a:2 b:2"
+            },
+            {
+              "input": "abc",
+              "output": "a:1 b:1 c:1"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "a",
+              "output": "a:1"
+            },
+            {
+              "input": "aaa",
+              "output": "a:3"
+            },
+            {
+              "input": "abcabc",
+              "output": "a:2 b:2 c:2"
+            },
+            {
+              "input": "programming",
+              "output": "p:1 r:2 o:1 g:2 a:1 m:2 i:1 n:1"
+            },
+            {
+              "input": "mississippi",
+              "output": "m:1 i:4 s:4 p:2"
+            },
+            {
+              "input": "success",
+              "output": "s:3 u:1 c:2 e:1"
+            },
+            {
+              "input": "xyz",
+              "output": "x:1 y:1 z:1"
+            }
+          ]
+        },
+        {
+          "question_id": "S8Q6",
+          "type": "max_difference",
+          "visible_tests": [
+            {
+              "input": "2 3 10 6 4 8 1",
+              "output": "8"
+            },
+            {
+              "input": "1 2 3 4 5",
+              "output": "4"
+            },
+            {
+              "input": "5 4 3 2 1",
+              "output": "-1"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1 2",
+              "output": "1"
+            },
+            {
+              "input": "2 1",
+              "output": "-1"
+            },
+            {
+              "input": "7 1 5 3 6 4",
+              "output": "5"
+            },
+            {
+              "input": "3 3 3 3",
+              "output": "0"
+            },
+            {
+              "input": "1 9 7 5 11 3",
+              "output": "10"
+            },
+            {
+              "input": "10 8 6 4 2",
+              "output": "-8"
+            },
+            {
+              "input": "1 1",
+              "output": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "set_number": 9,
+      "questions": [
+        {
+          "question_id": "S9Q1",
+          "type": "sum_of_n_naturals",
+          "visible_tests": [
+            {
+              "input": "5",
+              "output": "15"
+            },
+            {
+              "input": "10",
+              "output": "55"
+            },
+            {
+              "input": "1",
+              "output": "1"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "0",
+              "output": "0"
+            },
+            {
+              "input": "2",
+              "output": "3"
+            },
+            {
+              "input": "100",
+              "output": "5050"
+            },
+            {
+              "input": "50",
+              "output": "1275"
+            },
+            {
+              "input": "4",
+              "output": "10"
+            },
+            {
+              "input": "20",
+              "output": "210"
+            },
+            {
+              "input": "1000",
+              "output": "500500"
+            }
+          ]
+        },
+        {
+          "question_id": "S9Q2",
+          "type": "vowel_or_consonant",
+          "visible_tests": [
+            {
+              "input": "a",
+              "output": "Vowel"
+            },
+            {
+              "input": "b",
+              "output": "Consonant"
+            },
+            {
+              "input": "E",
+              "output": "Vowel"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "i",
+              "output": "Vowel"
+            },
+            {
+              "input": "z",
+              "output": "Consonant"
+            },
+            {
+              "input": "U",
+              "output": "Vowel"
+            },
+            {
+              "input": "M",
+              "output": "Consonant"
+            },
+            {
+              "input": "o",
+              "output": "Vowel"
+            },
+            {
+              "input": "y",
+              "output": "Consonant"
+            },
+            {
+              "input": "A",
+              "output": "Vowel"
+            }
+          ]
+        },
+        {
+          "question_id": "S9Q3",
+          "type": "array_reverse_print",
+          "visible_tests": [
+            {
+              "input": "1 2 3 4 5",
+              "output": "5 4 3 2 1"
+            },
+            {
+              "input": "10 20 30",
+              "output": "30 20 10"
+            },
+            {
+              "input": "7",
+              "output": "7"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1",
+              "output": "1"
+            },
+            {
+              "input": "5 5 5",
+              "output": "5 5 5"
+            },
+            {
+              "input": "2 4 6 8 10",
+              "output": "10 8 6 4 2"
+            },
+            {
+              "input": "9 8 7",
+              "output": "7 8 9"
+            },
+            {
+              "input": "0 1 2 3 4",
+              "output": "4 3 2 1 0"
+            },
+            {
+              "input": "100 99",
+              "output": "99 100"
+            },
+            {
+              "input": "1 3 5 7 9 11",
+              "output": "11 9 7 5 3 1"
+            }
+          ]
+        },
+        {
+          "question_id": "S9Q4",
+          "type": "strong_number",
+          "description": "A Strong Number is one where the sum of factorial of each digit equals the number itself.",
+          "formula": "sum(factorial(digit) for each digit d of n) == n",
+          "visible_tests": [
+            {
+              "input": "145",
+              "output": "Strong"
+            },
+            {
+              "input": "40585",
+              "output": "Strong"
+            },
+            {
+              "input": "100",
+              "output": "Not Strong"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1",
+              "output": "Strong"
+            },
+            {
+              "input": "2",
+              "output": "Strong"
+            },
+            {
+              "input": "10",
+              "output": "Not Strong"
+            },
+            {
+              "input": "12",
+              "output": "Not Strong"
+            },
+            {
+              "input": "123",
+              "output": "Not Strong"
+            },
+            {
+              "input": "2",
+              "output": "Strong"
+            },
+            {
+              "input": "999",
+              "output": "Not Strong"
+            }
+          ]
+        },
+        {
+          "question_id": "S9Q5",
+          "type": "string_rotation",
+          "visible_tests": [
+            {
+              "input": "abcde cdeab",
+              "output": "Yes"
+            },
+            {
+              "input": "hello lohel",
+              "output": "Yes"
+            },
+            {
+              "input": "abc bca",
+              "output": "Yes"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "abc def",
+              "output": "No"
+            },
+            {
+              "input": "aa aa",
+              "output": "Yes"
+            },
+            {
+              "input": "abcde abced",
+              "output": "No"
+            },
+            {
+              "input": "rotation tationro",
+              "output": "Yes"
+            },
+            {
+              "input": "ab ba",
+              "output": "Yes"
+            },
+            {
+              "input": "hello world",
+              "output": "No"
+            },
+            {
+              "input": "coding ingcod",
+              "output": "Yes"
+            }
+          ]
+        },
+        {
+          "question_id": "S9Q6",
+          "type": "decode_run_length",
+          "description": "Decode a run-length encoded string where each character is followed by its count.",
+          "formula": "For each (char, count) pair in encoded string: output = char repeated count times. Concatenate all.",
+          "visible_tests": [
+            {
+              "input": "a3b2c4",
+              "output": "aaabbcccc"
+            },
+            {
+              "input": "h1e1l2o1",
+              "output": "hello"
+            },
+            {
+              "input": "x5",
+              "output": "xxxxx"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "a1",
+              "output": "a"
+            },
+            {
+              "input": "a2b3",
+              "output": "aabbb"
+            },
+            {
+              "input": "z3y2x1",
+              "output": "zzzyyx"
+            },
+            {
+              "input": "a10",
+              "output": "aaaaaaaaaa"
+            },
+            {
+              "input": "m1i4s2p2i1",
+              "output": "miisssppii"
+            },
+            {
+              "input": "a1b1c1d1e1",
+              "output": "abcde"
+            },
+            {
+              "input": "a1b1c1d1e1",
+              "output": "abcde"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "set_number": 10,
+      "questions": [
+        {
+          "question_id": "S10Q1",
+          "type": "positive_negative_zero",
+          "visible_tests": [
+            {
+              "input": "5",
+              "output": "Positive"
+            },
+            {
+              "input": "-3",
+              "output": "Negative"
+            },
+            {
+              "input": "0",
+              "output": "Zero"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1",
+              "output": "Positive"
+            },
+            {
+              "input": "-1",
+              "output": "Negative"
+            },
+            {
+              "input": "100",
+              "output": "Positive"
+            },
+            {
+              "input": "-100",
+              "output": "Negative"
+            },
+            {
+              "input": "999",
+              "output": "Positive"
+            },
+            {
+              "input": "-999",
+              "output": "Negative"
+            },
+            {
+              "input": "0",
+              "output": "Zero"
+            }
+          ]
+        },
+        {
+          "question_id": "S10Q2",
+          "type": "count_words",
+          "visible_tests": [
+            {
+              "input": "hello world",
+              "output": "2"
+            },
+            {
+              "input": "the quick brown fox",
+              "output": "4"
+            },
+            {
+              "input": "one",
+              "output": "1"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "a b c d e",
+              "output": "5"
+            },
+            {
+              "input": "hello",
+              "output": "1"
+            },
+            {
+              "input": "I love to code",
+              "output": "4"
+            },
+            {
+              "input": "  spaces between  ",
+              "output": "2"
+            },
+            {
+              "input": "one two three four five six",
+              "output": "6"
+            },
+            {
+              "input": "AlgoAuction",
+              "output": "1"
+            },
+            {
+              "input": "a",
+              "output": "1"
+            }
+          ]
+        },
+        {
+          "question_id": "S10Q3",
+          "type": "smallest_element",
+          "visible_tests": [
+            {
+              "input": "3 1 4 1 5 9",
+              "output": "1"
+            },
+            {
+              "input": "10 20 30",
+              "output": "10"
+            },
+            {
+              "input": "5",
+              "output": "5"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1 2 3 4 5",
+              "output": "1"
+            },
+            {
+              "input": "100 200 50",
+              "output": "50"
+            },
+            {
+              "input": "-1 -5 -3",
+              "output": "-5"
+            },
+            {
+              "input": "0 0 0",
+              "output": "0"
+            },
+            {
+              "input": "7 7 7",
+              "output": "7"
+            },
+            {
+              "input": "999 1 500",
+              "output": "1"
+            },
+            {
+              "input": "42",
+              "output": "42"
+            }
+          ]
+        },
+        {
+          "question_id": "S10Q4",
+          "type": "factors_of_number",
+          "visible_tests": [
+            {
+              "input": "12",
+              "output": "1 2 3 4 6 12"
+            },
+            {
+              "input": "7",
+              "output": "1 7"
+            },
+            {
+              "input": "36",
+              "output": "1 2 3 4 6 9 12 18 36"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "1",
+              "output": "1"
+            },
+            {
+              "input": "2",
+              "output": "1 2"
+            },
+            {
+              "input": "100",
+              "output": "1 2 4 5 10 20 25 50 100"
+            },
+            {
+              "input": "13",
+              "output": "1 13"
+            },
+            {
+              "input": "16",
+              "output": "1 2 4 8 16"
+            },
+            {
+              "input": "24",
+              "output": "1 2 3 4 6 8 12 24"
+            },
+            {
+              "input": "50",
+              "output": "1 2 5 10 25 50"
+            }
+          ]
+        },
+        {
+          "question_id": "S10Q5",
+          "type": "reverse_each_word",
+          "visible_tests": [
+            {
+              "input": "Hello World",
+              "output": "olleH dlroW"
+            },
+            {
+              "input": "I love coding",
+              "output": "I evol gnidoc"
+            },
+            {
+              "input": "algo auction",
+              "output": "ogla noitcua"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "one",
+              "output": "eno"
+            },
+            {
+              "input": "a b c",
+              "output": "a b c"
+            },
+            {
+              "input": "abc def ghi",
+              "output": "cba fed ihg"
+            },
+            {
+              "input": "racecar",
+              "output": "racecar"
+            },
+            {
+              "input": "keep coding",
+              "output": "peek gnidoc"
+            },
+            {
+              "input": "hello world foo",
+              "output": "olleh dlrow oof"
+            },
+            {
+              "input": "abcde",
+              "output": "edcba"
+            }
+          ]
+        },
+        {
+          "question_id": "S10Q6",
+          "type": "words_same_start_end",
+          "visible_tests": [
+            {
+              "input": "level civic hello kayak",
+              "output": "3"
+            },
+            {
+              "input": "hello world",
+              "output": "0"
+            },
+            {
+              "input": "abcba anna test",
+              "output": "2"
+            }
+          ],
+          "hidden_tests": [
+            {
+              "input": "a",
+              "output": "1"
+            },
+            {
+              "input": "ab ba aa",
+              "output": "1"
+            },
+            {
+              "input": "madam refer noon",
+              "output": "3"
+            },
+            {
+              "input": "abc def ghi",
+              "output": "0"
+            },
+            {
+              "input": "easy area able",
+              "output": "3"
+            },
+            {
+              "input": "eye ere age",
+              "output": "3"
+            },
+            {
+              "input": "xyz abc",
+              "output": "0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
