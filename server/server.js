@@ -79,7 +79,9 @@ io.on('connection', (socket) => {
 
     socket.on('team_place_bid', (data) => {
         const state = getAuctionState();
-        if (state.status === 'bidding' && data.bidAmount > state.currentHighestBid) {
+        const nextAllowed = state.currentHighestBid === 0 ? 100 : state.currentHighestBid + 50;
+
+        if (state.status === 'bidding' && data.bidAmount === nextAllowed) {
             if (teamData[data.teamId]) {
                 const team = teamData[data.teamId];
                 if (team.assignedSets.length >= 3) {

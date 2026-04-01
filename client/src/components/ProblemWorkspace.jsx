@@ -28,7 +28,7 @@ export default function ProblemWorkspace({ problem, isPreview = false }) {
             // If submit, use all test cases (visible + hidden)
             // In a production app, the backend should fetch test cases based on problemId to prevent leaking.
             // For this version, we'll assume the problem object has both if it's assigned to the team.
-            const res = await fetch('http://localhost:5001/api/submissions/execute', {
+            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001'}/api/submissions/execute`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

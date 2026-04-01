@@ -9,7 +9,7 @@
   },
   "teamB": {
     "name": "Team B",
-    "currency": 980,
+    "currency": 850,
     "points": 5,
     "status": "Active",
     "assignedSets": [
@@ -61,6 +61,22 @@
   },
   "teamH": {
     "name": "Team H",
+    "currency": 1000,
+    "points": 0,
+    "status": "Active",
+    "assignedSets": [],
+    "problemScores": {}
+  },
+  "teamI": {
+    "name": "Team I",
+    "currency": 1000,
+    "points": 0,
+    "status": "Active",
+    "assignedSets": [],
+    "problemScores": {}
+  },
+  "teamJ": {
+    "name": "Team J",
     "currency": 1000,
     "points": 0,
     "status": "Active",

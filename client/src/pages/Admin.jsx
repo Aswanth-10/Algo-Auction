@@ -10,7 +10,7 @@ export default function Admin() {
     const [selectedSet, setSelectedSet] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:5001/api/problems/sets')
+        fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001'}/api/problems/sets`)
             .then(res => res.json())
             .then(data => {
                 if (data.success) setSets(data.sets);

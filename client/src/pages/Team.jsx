@@ -7,7 +7,6 @@ export default function Team() {
     const { user, logout } = useAuth();
     const { auctionState, teamData, placeBid, socket } = useRealtime();
     const myData = teamData[user.id] || { currency: user.currency, points: user.points };
-    const [bidInput, setBidInput] = useState('');
     const [assignedProblems, setAssignedProblems] = useState([]);
     const [auctionProblems, setAuctionProblems] = useState([]);
     const [activeProblem, setActiveProblem] = useState(null);
@@ -19,12 +18,12 @@ export default function Team() {
         if (myData && myData.assignedSets && !hasLoadedInitial) {
             const allAssignedSetIds = myData.assignedSets;
             if (allAssignedSetIds.length > 0) {
-                fetch('http://localhost:5001/api/problems')
+                fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001'}/api/problems`)
                     .then(r => r.json())
                     .then(pData => {
                         if (pData.success) {
                             // Find all sets to know which problems belong to which assigned set
-                            fetch('http://localhost:5001/api/problems/sets')
+                            fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001'}/api/problems/sets`)
                                 .then(rs => rs.json())
                                 .then(sData => {
                                     if (sData.success) {
@@ -56,7 +55,7 @@ export default function Team() {
     // Fetch auction problems reactively based on auctionState
     useEffect(() => {
         if (auctionState && (auctionState.status === 'bidding' || auctionState.status === 'closed') && auctionState.currentSetId) {
-            fetch(`http://localhost:5001/api/problems/sets/${auctionState.currentSetId}`)
+            fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001'}/api/problems/sets/${auctionState.currentSetId}`)
                 .then(res => res.json())
                 .then(problemsForSet => {
                     if (Array.isArray(problemsForSet)) {
@@ -75,7 +74,7 @@ export default function Team() {
         if (socket) {
             socket.on('auction_won', (data) => {
                 if (data.teamId === user.id) {
-                    fetch(`http://localhost:5001/api/problems/sets/${data.setId}`)
+                    fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001'}/api/problems/sets/${data.setId}`)
                         .then(res => res.json())
                         .then(problemsForSet => {
                             if (Array.isArray(problemsForSet)) {
@@ -92,11 +91,8 @@ export default function Team() {
         }
     }, [socket, user.id]);
 
-    const handleBid = () => {
-        if (bidInput && !isNaN(bidInput)) {
-            placeBid(user.id, parseInt(bidInput));
-            setBidInput('');
-        }
+    const handleBid = (amount) => {
+        placeBid(user.id, amount);
     };
 
     return (
@@ -200,22 +196,18 @@ export default function Team() {
                                                 <p className="text-[10px] text-neutral-500 mt-1">You cannot bid on more sets.</p>
                                             </div>
                                         ) : (
-                                            <>
-                                                <input
-                                                    type="number"
-                                                    value={bidInput}
-                                                    onChange={(e) => setBidInput(e.target.value)}
-                                                    placeholder="Enter bid amount"
-                                                    className="w-full bg-[#1f2028] border border-neutral-700 rounded-lg px-4 py-3 text-white outline-none focus:border-[#4facfe] transition-colors"
-                                                />
-                                                <button 
-                                                    onClick={handleBid} 
-                                                    disabled={!bidInput || parseInt(bidInput) <= auctionState.currentHighestBid || parseInt(bidInput) > myData.currency}
-                                                    className="w-full py-3 bg-[#4facfe] disabled:opacity-30 text-black font-bold rounded-lg hover:bg-[#3d98eb] transition-all shadow-[0_0_15px_rgba(79,172,254,0.3)] active:scale-[0.98]"
-                                                >
-                                                    PLACE BID
-                                                </button>
-                                            </>
+                                            (() => {
+                                                const nextBid = auctionState.currentHighestBid === 0 ? 100 : auctionState.currentHighestBid + 50;
+                                                return (
+                                                    <button 
+                                                        onClick={() => handleBid(nextBid)} 
+                                                        disabled={nextBid > myData.currency}
+                                                        className="w-full py-3 bg-[#4facfe] disabled:opacity-30 text-black font-bold rounded-lg hover:bg-[#3d98eb] transition-all shadow-[0_0_15px_rgba(79,172,254,0.3)] active:scale-[0.98]"
+                                                    >
+                                                        PLACE BID ({nextBid} 🪙)
+                                                    </button>
+                                                );
+                                            })()
                                         )}
                                     </div>
                                 )}

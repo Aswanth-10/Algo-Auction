@@ -11,6 +11,8 @@ const users = [
     { id: 'teamF', role: 'team', password: 'password', name: 'Team F', currency: 1000, points: 0 },
     { id: 'teamG', role: 'team', password: 'password', name: 'Team G', currency: 1000, points: 0 },
     { id: 'teamH', role: 'team', password: 'password', name: 'Team H', currency: 1000, points: 0 },
+    { id: 'teamI', role: 'team', password: 'password', name: 'Team I', currency: 1000, points: 0 },
+    { id: 'teamJ', role: 'team', password: 'password', name: 'Team J', currency: 1000, points: 0 },
 ];
 
 router.post('/login', (req, res) => {
