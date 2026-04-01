@@ -1,5 +1,5 @@
 {
-  "teamA": {
+  "Thinkers Duo": {
     "name": "Thinkers Duo",
     "currency": 1000,
     "points": 0,
@@ -7,7 +7,7 @@
     "assignedSets": [],
     "problemScores": {}
   },
-  "teamB": {
+  "Hack & Code": {
     "name": "Hack & Code",
     "currency": 850,
     "points": 5,
@@ -19,7 +19,7 @@
       "S1Q1": 5
     }
   },
-  "teamC": {
+  "Newbies": {
     "name": "Newbies",
     "currency": 1000,
     "points": 0,
@@ -27,7 +27,7 @@
     "assignedSets": [],
     "problemScores": {}
   },
-  "teamD": {
+  "Boult": {
     "name": "Boult",
     "currency": 1000,
     "points": 0,
@@ -35,7 +35,7 @@
     "assignedSets": [],
     "problemScores": {}
   },
-  "teamE": {
+  "Error 404": {
     "name": "Error 404",
     "currency": 1000,
     "points": 0,
@@ -43,7 +43,7 @@
     "assignedSets": [],
     "problemScores": {}
   },
-  "teamF": {
+  "Solitude": {
     "name": "Solitude",
     "currency": 1000,
     "points": 0,
@@ -51,7 +51,7 @@
     "assignedSets": [],
     "problemScores": {}
   },
-  "teamG": {
+  "Code Bidders": {
     "name": "Code Bidders",
     "currency": 1000,
     "points": 0,
@@ -59,7 +59,7 @@
     "assignedSets": [],
     "problemScores": {}
   },
-  "teamH": {
+  "Debuggers": {
     "name": "Debuggers",
     "currency": 1000,
     "points": 0,
@@ -67,7 +67,7 @@
     "assignedSets": [],
     "problemScores": {}
   },
-  "teamI": {
+  "Hackos": {
     "name": "Hackos",
     "currency": 1000,
     "points": 0,
@@ -75,7 +75,7 @@
     "assignedSets": [],
     "problemScores": {}
   },
-  "teamJ": {
+  "Decoders": {
     "name": "Decoders",
     "currency": 1000,
     "points": 0,
