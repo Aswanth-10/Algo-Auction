@@ -1,6 +1,6 @@
 {
   "teamA": {
-    "name": "Team A",
+    "name": "Thinkers Duo",
     "currency": 1000,
     "points": 0,
     "status": "Active",
@@ -8,7 +8,7 @@
     "problemScores": {}
   },
   "teamB": {
-    "name": "Team B",
+    "name": "Hack & Code",
     "currency": 850,
     "points": 5,
     "status": "Active",
@@ -20,7 +20,7 @@
     }
   },
   "teamC": {
-    "name": "Team C",
+    "name": "Newbies",
     "currency": 1000,
     "points": 0,
     "status": "Active",
@@ -28,7 +28,7 @@
     "problemScores": {}
   },
   "teamD": {
-    "name": "Team D",
+    "name": "Boult",
     "currency": 1000,
     "points": 0,
     "status": "Active",
@@ -36,7 +36,7 @@
     "problemScores": {}
   },
   "teamE": {
-    "name": "Team E",
+    "name": "Error 404",
     "currency": 1000,
     "points": 0,
     "status": "Active",
@@ -44,7 +44,7 @@
     "problemScores": {}
   },
   "teamF": {
-    "name": "Team F",
+    "name": "Solitude",
     "currency": 1000,
     "points": 0,
     "status": "Active",
@@ -52,7 +52,7 @@
     "problemScores": {}
   },
   "teamG": {
-    "name": "Team G",
+    "name": "Code Bidders",
     "currency": 1000,
     "points": 0,
     "status": "Active",
@@ -60,7 +60,7 @@
     "problemScores": {}
   },
   "teamH": {
-    "name": "Team H",
+    "name": "Debuggers",
     "currency": 1000,
     "points": 0,
     "status": "Active",
@@ -68,7 +68,7 @@
     "problemScores": {}
   },
   "teamI": {
-    "name": "Team I",
+    "name": "Hackos",
     "currency": 1000,
     "points": 0,
     "status": "Active",
@@ -76,7 +76,7 @@
     "problemScores": {}
   },
   "teamJ": {
-    "name": "Team J",
+    "name": "Decoders",
     "currency": 1000,
     "points": 0,
     "status": "Active",
